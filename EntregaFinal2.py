@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 # Cargar el modelo
-modelo_cargado = load('modelo_bootstrap.joblib')
+modelo_cargado = load('./modelo_bootstrap.joblib')
 
 
 st.title("Predicción de Demencia")
