@@ -3,17 +3,8 @@ import pandas as pd
 import streamlit as st
 
 
-st.write("Inicio de la carga del modelo...")
 # Cargar el modelo
 modelo_cargado = load('modelo_bootstrap.joblib')
-
-try:
-    modelo_cargado = load('./modelo_bootstrap.joblib')
-    st.write("Modelo cargado con éxito.")
-except FileNotFoundError as e:
-    st.error(f"Error: Archivo no encontrado - {e}")
-except Exception as e:
-    st.error(f"Error cargando el modelo: {e}")
 
 st.title("Predicción de Demencia")
 
